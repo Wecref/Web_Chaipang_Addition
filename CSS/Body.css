@@ -1,0 +1,13 @@
+@charset "UTF-8";
+html,
+body {
+    margin: 0px;
+    font-size: 20px;
+}
+
+body ul {
+    list-style: none;
+}
+body a {
+    text-decoration: none;
+}
