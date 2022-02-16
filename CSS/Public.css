@@ -3,10 +3,44 @@
 .NanumB {
     font-family: "NanumSquareB";
 }
-.FontNomalSize {
-    font-size: 20px;
+.NanumR {
+    font-family: "NanumSquareR";
+}
+.NanumEB {
+    font-family: "NanumSquareEB";
+}
+.Font20Size {
+    /* font-size: 20px; */
+    font-size: 1rem;
+}
+.Font25Size {
+    /* font-size: 25px; */
+    font-size: 1.25rem;
+}
+.Font30Size {
+    /* font-size: 30px; */
+    font-size: 1.5rem;
+}
+.Font35Size {
+    /* font-size: 35px; */
+    font-size: 1.75rem;
+}
+.Font40Size {
+    font-size: 2rem;
+}
+.Font45Size {
+    /* font-size: 45px; */
+    font-size: 2.25rem;
+}
+.Font50Size {
+    /* font-size: 50px; */
+    font-size: 2.5rem;
 }
 /**/
+.MaxWidthAndCenter {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 .MarginZero{
     margin: 0rem 0rem 0rem 0rem;
 }
@@ -14,7 +48,11 @@
     padding: 0rem 0rem 0rem 0rem;
 }
 /**/
+.TxtNeon {
+    color: #8e2fea;
+}
 /**/
 .clicked {
     color: #1ec8c8;
 }
+/**/

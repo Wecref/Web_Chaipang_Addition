@@ -1,0 +1,95 @@
+@charset "UTF-8";
+#contents-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/**/
+#contents-category #newline{
+    width: 40rem;
+    height: .25rem;
+    /* background-color: red; */
+    background-color: #F5F5F5;
+}
+/**/
+#contents-category-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+#contents-category-container > #title {
+    color: #6b6b6b;
+    margin-bottom: 5rem;
+}
+#contents-category-container > #title-img {
+    margin: 2.5rem 0rem 2.5rem 0rem;
+}
+#contents-category-container > #character {
+    margin: 4rem 0rem 4rem 0rem;
+}
+#contents-category-container > #info {
+    width: 55rem;
+    background-color: #FF75C7;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+#contents-category-container > #comingSoon {
+    color: #FF75C7;
+}
+/**/
+#contents-category-container #release-container {
+    display: flex;
+    margin: 2rem 0rem;
+}
+#contents-category-container #release-container > img {
+    margin-right: 3rem;
+}
+#contents-category-container #release-container-info{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    
+}
+/**/
+#contents-category-container #release-info {
+    display: flex;
+}
+#contents-category-container #release-info:not(:last-child){
+    margin-bottom: 1rem;
+}
+#contents-category-container #release-info img{
+    align-self: flex-start;
+    margin-right: 1rem;
+}
+#contents-category-container #release-info div {
+    display: flex;
+    flex-direction: column;
+}
+#contents-category-container #release-info div p{
+    margin: 0rem 0rem .2rem 0rem;
+}
+#contents-category-container #release-info div p:not(:first-child){
+    color: #686868;
+}
+#contents-category-container #release-info div p:first-child{
+    color:#FF75C7;
+}
+/**/
+#contents-category-container #release-container-imgs {
+    display: flex;
+    margin: 0rem;
+    padding: 2rem 0rem;
+}
+/**/
+#contents-category-container #release-container-link {
+    display: flex;
+    margin: 0rem;
+    padding: 2rem 0rem 6rem 0rem;
+}
+#contents-category-container #release-container-link li:first-child img {
+    margin-right: 1rem;
+}

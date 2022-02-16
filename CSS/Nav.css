@@ -6,8 +6,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    position:sticky;
+    position: sticky;
     top: 0;
+    right: 0;
+    left: 0;
 }
 /**/
 #nav-logo {
@@ -48,7 +50,7 @@ nav {
 }
 /**/
 #nav-contents-link {
-    background-color: #686868;
+    background-color: #AFAFAF;
     display: flex;
     margin: 0rem 3rem 0rem 3rem;
     padding: 0rem .3rem 0rem .3rem;

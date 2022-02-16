@@ -29,7 +29,6 @@ export function InitMenu(targets){
     }
 }
 export function InitLanguage(isKorea, targets) {
-    console.log(isKorea);
     if (isKorea)
     {
         targets[0].classList.add("clicked");

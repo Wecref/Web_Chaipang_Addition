@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#contents-main {
+    height: 912px;
+    background-image: url("../Resources/Img/Math_1.png");
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 3rem;
+}
+#contents-main img{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+/**/
+#contents-main-InfoA {
+    background-color: #FF75C7;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contents-main-InfoA p {
+    color: #FFFFFF;
+}
+#contents-main-InfoA p:nth-child(2){
+    margin: .25rem 0rem 0rem 0rem;
+}
+/**/
+#contents-main-InfoB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contents-main-InfoB p{
+    color: #6b6b6b;
+}
+#contents-main-InfoB p:nth-child(2){
+    margin: .5rem 0rem .5rem 0rem;
+}
