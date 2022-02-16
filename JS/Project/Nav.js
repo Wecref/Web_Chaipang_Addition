@@ -27,7 +27,10 @@ export function InitMenu(targets){
             }
         });
     }
+    targets[0].classList.add("clicked");
+
 }
+
 export function InitLanguage(isKorea, targets) {
     if (isKorea)
     {
