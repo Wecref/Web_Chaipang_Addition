@@ -11,7 +11,7 @@ nav {
     top: 0;
     right: 0;
     left: 0;
-    /* z-index: 1; */
+    z-index: 1;
 }
 /**/
 nav #nav-main{
@@ -26,9 +26,6 @@ nav #nav_menu_icon {
     filter: opacity(0.5) drop-shadow(0 0 0 red);
     cursor: pointer;
     display: none;
-}
-nav #nav-contents.active {
-    display: flex;
 }
 /**/
 #nav-logo {
@@ -50,6 +47,9 @@ nav #nav-contents.active {
     width: 8.4rem;
 }
 /**/
+#nav-contents.active {
+    display: flex;
+}
 #nav-contents{
     /* background-color: rgb(105, 72, 72); */
     width: 100%;
