@@ -14,43 +14,63 @@ body a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1600px) {
+    html,
+    body{
+        /* background-color: red; */
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
     html,
     body{
         /* background-color: blue; */
         font-size: 16px;
     }
-    /**/
-    /* #contents-main{
-        padding-top: 4.5rem;
-        margin-bottom: 0rem;
-    } */
-    footer #footer-link {
-        padding-bottom: 2.7rem;
-    }
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1300px) {
     html,
     body{
-        /* background-color: blue; */
-        font-size: 11px;
+        /* background-color: palegreen; */
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    html,
+    body{
+        /* background-color: pink; */
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    html,
+    body{
+        /* background-color: purple; */
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 768px) {
     html,
     body{
-        /* background-color: blue; */
+        /* background-color: seagreen; */
         font-size: 8px;
     }
 }
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 674px) {
     html,
     body{
-        /* background-color: red; */
-        font-size: 4px;
+        /* background-color: snow; */
+        font-size: 6px;
     }
-    footer #footer-link {
-        padding-bottom: 4.5rem;
+}
+@media screen and (max-width: 584px) {
+    html,
+    body{
+        /* background-color: slategrey; */
+        font-size: 4px;
     }
 }

@@ -1,29 +1,24 @@
 @charset "UTF-8";
 
-footer {
-    width: 100%;
-    /* height: 351px; */
-    height: 17.55rem;
-    background-image: url("../Resources/Img/Math_19.png");
-    background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
 
+footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    
-    padding-bottom: 3rem;
 }
+
 footer ul{
     margin: 0rem;
     padding: 0rem;
 }
 /**/
 footer #footer-link {
+    width: 100%;
     display: flex;
-    padding-bottom: 3.5rem;
+    padding-top: 2.7rem;
+    padding-bottom: .5rem;
+
+    background-color: #FFE5CC;
+    justify-content: center;
 }
 footer #footer-link li:nth-child(2){
     margin: 0rem 3rem;
@@ -40,12 +35,15 @@ footer #footer-link li:last-child img {
 /**/
 footer #footer-info{
     display: flex;
-    width: 80%;
-    justify-content: space-between;
-
+    width: 100%;
+    justify-content: space-around;
     font-family: "NanumSquareE";
     font-size: 1rem;
     color: #ffffff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    background-color: #FFD2B3;
 }
 footer #footer-info ul:not(:nth-child(2)) li:not(:last-child){
     padding-bottom: .125rem;

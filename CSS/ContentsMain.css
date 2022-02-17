@@ -1,40 +1,16 @@
 @charset "UTF-8";
-
-/* width: 96rem; */
-/* height: 912px; */
-/* #contents-main {
-    
-    width: 100%;
-    
-    height: 45.6rem;
-
-    background-image: url("../Resources/Img/Math_1.png");
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 6rem;
-    margin-bottom: 3rem;
-} */
 #contents-main {
     width: 100%;
     height: 45.6rem;
 
     background-image: url("../Resources/Img/Math_1.png");
     background-position: center;
-    /* background-size: contain; */
     background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding-top: 6rem; */
-    margin-bottom: 3rem;
 }
 #contents-main-InfoA p {
     color: #FFFFFF;
