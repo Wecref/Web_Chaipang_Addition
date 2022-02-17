@@ -23,7 +23,8 @@ export function InitMenu(targets){
 
             if (event.target.dataset.href != null)
             {
-                window.open("/".concat(event.target.dataset.href), "_self");
+                // window.open("/".concat(event.target.dataset.href), "_self");
+                window.open("".concat(event.target.dataset.href), "_self");
             }
         });
     }
