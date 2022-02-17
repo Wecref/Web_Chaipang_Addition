@@ -3,9 +3,9 @@
 nav {
     width: auto;
     background-color: rgb(255, 255, 255);
+
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -14,8 +14,21 @@ nav {
     /* z-index: 1; */
 }
 /**/
-nav > a {
+nav #nav-main{
+    display: flex;
+    justify-content: space-between;
+}
+nav #nav_menu_icon {
+    width: 2.68rem;
+    height: 2.68rem;
+    max-width: 48px;
+    max-height: 48px;
     filter: opacity(0.5) drop-shadow(0 0 0 red);
+    cursor: pointer;
+    display: none;
+}
+nav #nav-contents.active {
+    display: flex;
 }
 /**/
 #nav-logo {
@@ -39,8 +52,11 @@ nav > a {
 /**/
 #nav-contents{
     /* background-color: rgb(105, 72, 72); */
+    width: 100%;
     display: flex;
     color: #6B6B6B;
+    align-items: center;
+    justify-content: flex-end;
 }
 /**/
 #nav-contents-menu {

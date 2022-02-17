@@ -20,6 +20,17 @@ body a {
         /* background-color: red; */
         font-size: 18px;
     }
+    nav {
+        flex-direction: column;
+    }
+    nav #nav-contents {
+        display: none;
+        /* flex-direction: column; */
+        
+    }
+    nav #nav_menu_icon {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 1450px) {

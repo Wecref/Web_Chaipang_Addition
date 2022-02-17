@@ -15,6 +15,9 @@ function ClickCss(event, targets){
         event.target.classList.add("clicked");
     }
 }
+function OpenMenu(event){
+
+}
 
 export function InitMenu(targets){
     for (var i = 0; i < targets.length; i++){
@@ -33,14 +36,18 @@ export function InitMenu(targets){
 }
 
 export function InitLanguage(isKorea, targets) {
+    // isKorea = false;
     if (isKorea)
     {
         targets[0].classList.add("clicked");
+        // window.location.replace("korea.html");
     } 
     else
     {
         targets[1].classList.add("clicked");
+        // window.location.replace("english.html");
     }
+
     for (var i = 0; i < targets.length; i++){
         targets[i].addEventListener("click", (event)=>{
             ClickCss(event, targets);
@@ -48,4 +55,10 @@ export function InitLanguage(isKorea, targets) {
             
         })
     }
+}
+
+export function InitMenuIcon(icon, layout){
+    icon.addEventListener("click", (event) => {
+        layout.classList.toggle("active");
+    });
 }
