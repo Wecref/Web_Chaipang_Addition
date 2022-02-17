@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 nav {
+    width: auto;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -28,6 +29,7 @@ nav {
 }
 #nav-logo img {
     padding: 0rem 1rem 0rem 1rem;
+    width: 8.4rem;
 }
 /**/
 #nav-contents{
@@ -61,7 +63,7 @@ nav {
     display: flex;
     margin: 0rem 3rem 0rem 3rem;
     padding: 0rem .3rem 0rem .3rem;
-    border-radius: 14px;
+    border-radius: 100rem / 100rem;
     width: 7rem;
     height: 1.5rem;
     justify-content: center;
@@ -78,6 +80,8 @@ nav {
 #nav-contents-link img {
     display: flex;
     cursor: pointer;
+    width: 1.2rem;
+    height: auto;
 }
 /**/
 #nav-contents-lang {

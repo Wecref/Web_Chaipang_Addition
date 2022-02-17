@@ -25,17 +25,19 @@
 }
 #contents-category-container > #title-img {
     margin: 2.5rem 0rem 2.5rem 0rem;
-}
-#contents-category-container > #character {
-    margin: 4rem 0rem 4rem 0rem;
+    width: 18.5rem;
 }
 #contents-category-container > #info {
     width: 55rem;
     background-color: #FF75C7;
     padding: 1rem 1.5rem 1rem 1.5rem;
-    border-radius: 100px;
+    border-radius: 100rem;
     color: #ffffff;
     text-align: center;
+}
+#contents-category-container > #character {
+    margin: 4rem 0rem 4rem 0rem;
+    width: 13.65rem;
 }
 #contents-category-container > #comingSoon {
     color: #FF75C7;
@@ -44,8 +46,11 @@
 #contents-category-container #release-container {
     display: flex;
     margin: 2rem 0rem;
+    align-items: center;
 }
 #contents-category-container #release-container > img {
+    width: 13.75rem;
+    height: 100%;
     margin-right: 3rem;
 }
 #contents-category-container #release-container-info{
@@ -62,6 +67,7 @@
     margin-bottom: 1rem;
 }
 #contents-category-container #release-info img{
+    width: 4.1rem;
     align-self: flex-start;
     margin-right: 1rem;
 }
@@ -84,11 +90,17 @@
     margin: 0rem;
     padding: 2rem 0rem;
 }
+#contents-category-container #release-container-imgs img{
+    width: 8.3rem;
+}
 /**/
 #contents-category-container #release-container-link {
     display: flex;
     margin: 0rem;
     padding: 2rem 0rem 6rem 0rem;
+}
+#contents-category-container #release-container-link img{
+    width: 8.05rem;
 }
 #contents-category-container #release-container-link li:first-child img {
     margin-right: 1rem;
