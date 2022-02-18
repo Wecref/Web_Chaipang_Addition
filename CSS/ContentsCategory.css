@@ -52,9 +52,9 @@
     justify-content: center;
 }
 #contents-category-container #release-container > img {
-    width: 13.75rem;
-    height: 100%;
-    margin-right: 3rem;
+    width: 275px;
+    height: 275px;
+    margin-right: 60px;
 }
 #contents-category-container #release-container-info{
     display: flex;

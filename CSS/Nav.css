@@ -56,7 +56,8 @@ nav #nav_menu_icon {
     color: #6B6B6B;
     align-items: center;
     justify-content: flex-end;
-    font-size: .9rem;
+    /* font-size: .9rem; */
+    font-size: 18px;
 }
 /**/
 #nav-contents-menu {
@@ -85,8 +86,10 @@ nav #nav_menu_icon {
     margin: 0rem 1.5rem 0rem 1.5rem;
     padding: 0rem .3rem 0rem .3rem;
     border-radius: 100rem / 100rem;
-    width: 7rem;
-    height: 1.5rem;
+    /* width: 7rem;
+    height: 1.5rem; */
+    width: 140px;
+    height: 30px;
     justify-content: center;
     justify-content: space-around;
 }
@@ -101,7 +104,7 @@ nav #nav_menu_icon {
 #nav-contents-link img {
     display: flex;
     cursor: pointer;
-    width: 1rem;
+    width: 20px;
     height: auto;
 }
 /**/
