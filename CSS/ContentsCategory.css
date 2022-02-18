@@ -28,9 +28,10 @@
     width: 18.5rem;
 }
 #contents-category-container > #info {
-    width: 55rem;
+    /* width: 55rem; */
+    width: auto;
     background-color: #FF75C7;
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 3rem 1rem 3rem;
     border-radius: 100rem;
     color: #ffffff;
     text-align: center;

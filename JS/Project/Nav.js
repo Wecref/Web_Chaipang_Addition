@@ -26,7 +26,6 @@ export function InitMenu(targets){
 
             if (event.target.dataset.href != null)
             {
-                // window.open("/".concat(event.target.dataset.href), "_self");
                 window.open("".concat(event.target.dataset.href), "_self");
             }
         });
@@ -35,25 +34,15 @@ export function InitMenu(targets){
 
 }
 
-export function InitLanguage(isKorea, targets) {
-    // isKorea = false;
-    if (isKorea)
-    {
-        targets[0].classList.add("clicked");
-        // window.location.replace("korea.html");
-    } 
-    else
-    {
-        targets[1].classList.add("clicked");
-        // window.location.replace("english.html");
-    }
-
+export function InitLanguageMenu(targets)
+{
     for (var i = 0; i < targets.length; i++){
         targets[i].addEventListener("click", (event)=>{
-            ClickCss(event, targets);
-
-            
-        })
+            if (event.target.dataset.lang != null)
+            {
+                window.location.replace("../../../Html/".concat(event.target.dataset.lang));
+            }
+        });
     }
 }
 

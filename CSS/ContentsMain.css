@@ -19,9 +19,11 @@
     margin: .25rem 0rem 0rem 0rem;
 }
 #contents-main img{
-    width: 27.5rem;
-    height: auto;
+    /* width: 27.5rem; */
+    width: auto;
+    height: 15rem;
     max-width: 546px;
+    max-height: 297px;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
