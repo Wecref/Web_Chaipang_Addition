@@ -1,4 +1,4 @@
-import * as lang from '../Module/Language.js'
+import * as lang from './JS/Module/Language.js'
 
 if (lang.isKorea())
 {
