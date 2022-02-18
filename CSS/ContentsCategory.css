@@ -25,7 +25,10 @@
 }
 #contents-category-container > #title-img {
     margin: 2.5rem 0rem 2.5rem 0rem;
-    width: 18.5rem;
+    /* width: 18.5rem; */
+    width: 40%;
+    height: auto;
+    max-width: 370px;
 }
 #contents-category-container > #info {
     /* width: 55rem; */
@@ -38,7 +41,9 @@
 }
 #contents-category-container > #character {
     margin: 4rem 0rem 4rem 0rem;
-    width: 13.65rem;
+    /* width: 13.65rem; */
+    width: 40%;
+    max-width: 273px;
 }
 #contents-category-container > #comingSoon {
     color: #FF75C7;
