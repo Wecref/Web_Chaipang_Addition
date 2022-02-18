@@ -40,7 +40,7 @@ export function InitLanguageMenu(targets)
         targets[i].addEventListener("click", (event)=>{
             if (event.target.dataset.lang != null)
             {
-                window.location.replace("../../../Html/".concat(event.target.dataset.lang));
+                window.location.replace("".concat(event.target.dataset.lang));
             }
         });
     }

@@ -1,6 +1,6 @@
 import * as lang from '../Module/Language.js'
 
-if (lang.isKorea() == false)
+if (lang.isKorea())
 {
     window.location.replace("./Html/kr_index.html");
 }
