@@ -38,12 +38,17 @@ footer #footer-info{
     align-items: center;
     justify-content: center;
     font-family: "NanumSquareE";
-    font-size: 1rem;
     color: #ffffff;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 
     background-color: #FFD2B3;
+}
+footer #footer-info ul:nth-child(2) {
+    font-size: 1rem;
+}
+footer #footer-info ul:not(:nth-child(2)) {
+    font-size: .95rem;
 }
 footer #footer-info ul:not(:nth-child(2)) li:not(:last-child){
     padding-bottom: .125rem;
