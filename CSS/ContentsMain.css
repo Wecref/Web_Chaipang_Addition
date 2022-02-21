@@ -40,14 +40,16 @@
 
 /**/
 #contents-main-InfoB {
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin: 0rem 1rem;
 }
 #contents-main-InfoB p{
     color: #6b6b6b;
 }
-#contents-main-InfoB p:nth-child(2){
+/* #contents-main-InfoB p:nth-child(2){
     margin: .5rem 0rem .5rem 0rem;
-}
+} */
