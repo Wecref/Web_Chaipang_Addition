@@ -111,22 +111,20 @@ body a {
 @media screen and (max-width: 425px) {
     html,
     body{
-       font-size: 4px;
+       font-size: 10px;
     }
     #nav-logo li:nth-child(2){
         display: none;
     }
-    #nav-logo img {
-        width: 30rem;
-    }
-    nav #nav_menu_icon {
-        width: 8rem;
-        height: 8rem;
-    }
-    #contents-main {
-        height: 50rem;
-    }
 
+    #release-info div p:nth-child(1){
+        font-size: 1.5rem;
+    }
+    #release-info div p:not(:nth-child(1)){
+        font-size: 1.25rem;
+    }
+    
+ 
     #footer-info {
         flex-direction: column;
     }
@@ -134,13 +132,7 @@ body a {
         text-align: center;
     }
     #footer-info ul:nth-child(2){
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-    footer #footer-info ul:nth-child(2) {
-        font-size: 15px;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 14px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }

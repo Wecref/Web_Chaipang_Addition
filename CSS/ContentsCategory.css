@@ -34,8 +34,8 @@
     /* width: 55rem; */
     width: auto;
     background-color: #FF75C7;
-    padding: 1rem 3rem 1rem 3rem;
-    border-radius: 100rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border-radius: 100rem / 100rem;
     color: #ffffff;
     text-align: center;
 }
@@ -47,6 +47,7 @@
 }
 #contents-category-container > #comingSoon {
     color: #FF75C7;
+    text-align: center;
 }
 /**/
 #contents-category-container #release-container {
@@ -121,5 +122,5 @@
     height: auto;
 }
 #contents-category-container #release-container-link li:first-child img {
-    margin-right: 1rem;
+    padding-right: 1rem;
 }
