@@ -39,9 +39,7 @@ footer #footer-info{
     justify-content: center;
     font-family: "NanumSquareE";
     color: #ffffff;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-
+    padding: 1.5rem 1.5rem;
     background-color: #FFD2B3;
 }
 
