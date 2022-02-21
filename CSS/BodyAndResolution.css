@@ -3,7 +3,6 @@ html,
 body {
     background-color: white;
     margin: 0px;
-    font-size: 20px;
     max-width: 1920px;
     margin: 0 auto;
     word-break: keep-all;
@@ -14,13 +13,150 @@ body ul {
 body a {
     text-decoration: none;
 }
-
 @media screen and (max-width: 1650px) 
-{    
-    html,
-    body{
-       font-size: 18px;
+{
+    nav { 
+        flex-direction: column; 
+        padding: .25em;
     }
+    nav #nav-contents {
+        display: none;
+        flex-direction: column;
+        padding-top: 2rem;
+    }    
+    nav #nav-contents > ul:not(:first-child){
+        margin-top: 1rem;
+    }
+    nav #nav-contents-lang li:last-child {
+        padding-right: 0rem;
+    }
+    nav #nav_menu_icon {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #contents-main-InfoA {
+        padding: .8em 1.8em;
+        margin: 0em 1em;
+    }
+    #contents-main-InfoA p {
+        font-size: 1.3em;
+    }
+    #contents-main-InfoB {
+        font-size: .9em;
+    }
+    #contents-main {
+        height: 45em;
+    }
+     #contents-category-container > #title {
+        margin-bottom: 3em;
+    }
+}
+
+@media screen and (max-width: 1070px) 
+{
+    #nav-contents-menu {
+        flex-direction: column;
+    }
+    #nav-contents-menu li:not(:last-child) {
+        padding: 0rem 0rem;
+    }
+
+    #contents-category-container > #info {
+        font-size: 1.2em;
+    }
+    #contents-category-container #release-info div p:first-child {
+        font-size: 1.2em;
+    }
+    #contents-category-container #release-info div p:not(:first-child) {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 900px) {
+    #contents-main-InfoA p {
+        font-size: 1em;
+    }
+    #contents-main-InfoB {
+        font-size: .7em;
+    }
+    #contents-main {
+        height: 40em;
+    }
+    #contents-category-container > #info {
+        font-size: .9em;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    #contents-main-InfoA {
+        padding: .5em 1em;
+        margin: 0em 1em;
+    }
+    #contents-main-InfoA p {
+        font-size: .8em;
+    }
+    #contents-main-InfoB {
+        font-size: .55em;
+    }
+    #contents-main {
+        height: 35em;
+    }
+    #contents-category-container > #info .br {
+        display: flex;
+    }
+    #contents-category-container > #info {
+        font-size: .8em;
+    }
+    #release-container .br {
+        display: none;
+    }
+}
+@media screen and (max-width: 530px) {
+    #contents-main img {
+        height: 10em;
+    }
+    #contents-main-InfoA .br{
+        display: flex;
+    }
+    #contents-main-InfoA p {
+        font-size: .69em;
+    }
+    #contents-main-InfoB {
+        font-size: .45em;
+    }
+    #contents-main {
+        height: 32em;
+    }
+    #contents-category-container #release-info div p:first-child {
+        font-size: 1em;
+    }
+    #contents-category-container #release-info div p:not(:first-child) {
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 425px) {
+    #nav-logo li:nth-child(2) img {
+        display: none;
+    }
+    #contents-main-InfoA p {
+        font-size: .6em;
+    }
+    #contents-main-InfoB {
+        width: 100%;
+    }
+    #contents-category-container > #info {
+        padding: 1em 2em;
+    }
+    #contents-category-container > #title {
+        font-size: 1.8em;
+    }
+    #contents-category-container #release-container {
+        margin: 1%;
+    }
+}
+/* @media screen and (max-width: 1650px) 
+{    
     nav {
         flex-direction: column;
     }
@@ -63,10 +199,6 @@ body a {
     }
 }
 @media screen and (max-width: 1024px) {
-    html,
-    body{
-       font-size: 16px;
-    }
     #nav-contents-menu {
         flex-direction: column;
     }
@@ -90,10 +222,6 @@ body a {
     }
 } 
 @media screen and (max-width: 768px) {
-    html,
-    body{
-       font-size: 14px;
-    }
     #nav-logo li:nth-child(2){
         display: none;
     }
@@ -125,10 +253,6 @@ body a {
     }
 }
 @media screen and (max-width: 425px) {
-    html,
-    body{
-       font-size: 10px;
-    }
     #nav-logo li:nth-child(2){
         display: none;
     }
@@ -154,4 +278,4 @@ body a {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-}
+} */

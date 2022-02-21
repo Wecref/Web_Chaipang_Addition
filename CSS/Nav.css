@@ -6,7 +6,7 @@ nav {
 
     display: flex;
 
-    padding: 1rem;
+    padding: 1em;
     position: sticky;
     top: 0;
     right: 0;
@@ -20,8 +20,8 @@ nav #nav-main{
     align-items: center;
 }
 nav #nav_menu_icon {
-    width: 4rem;
-    height: 4rem;
+    width: 4em;
+    height: 4em;
     filter: opacity(0.5) drop-shadow(0 0 0 red);
     cursor: pointer;
     display: none;
@@ -42,22 +42,20 @@ nav #nav_menu_icon {
     display: flex;
 }
 #nav-logo img {
-    padding: 0rem 1rem 0rem 1rem;
-    width: 8.4rem;
+    padding: 0em 1em 0em 1em;
+    width: 8.4em;
 }
 /**/
 #nav-contents.active {
     display: flex;
 }
 #nav-contents{
-    /* background-color: rgb(105, 72, 72); */
     width: 100%;
     display: flex;
     color: #6B6B6B;
     align-items: center;
     justify-content: flex-end;
-    /* font-size: .9rem; */
-    font-size: 18px;
+    font-size: 1.125em;
 }
 /**/
 #nav-contents-menu {
@@ -66,7 +64,7 @@ nav #nav_menu_icon {
     align-items: center;
 }
 #nav-contents-menu li:not(:last-child) {
-    padding: 0rem 1rem 0rem 0rem;
+    padding: 0em 1em 0em 0em;
 }
 #nav-contents-menu li:nth-child(-n+4):hover {
     color: #ffd200;
@@ -83,11 +81,11 @@ nav #nav_menu_icon {
 #nav-contents-link {
     background-color: #AFAFAF;
     display: flex;
-    margin: 0rem 1.5rem 0rem 1.5rem;
-    padding: 0rem .3rem 0rem .3rem;
-    border-radius: 100rem / 100rem;
-    /* width: 7rem;
-    height: 1.5rem; */
+    margin: 0em 1.5em 0em 1.5em;
+    padding: 0em .3em 0em .3em;
+    border-radius: 100em / 100em;
+    /* width: 7em;
+    height: 1.5em; */
     width: 140px;
     height: 30px;
     justify-content: center;
@@ -99,7 +97,7 @@ nav #nav_menu_icon {
     justify-items: center;
 }
 #nav-contents-link li:nth-child(2) {
-    padding: 0rem .5rem 0rem .5rem;
+    padding: 0em .5em 0em .5em;
 }
 #nav-contents-link img {
     display: flex;
@@ -114,10 +112,10 @@ nav #nav_menu_icon {
     align-items: center;
 }
 #nav-contents-lang li:nth-child(2) {
-    padding: 0rem .5rem 0rem .5rem;
+    padding: 0em .5em 0em .5em;
 }
 #nav-contents-lang li:last-child {
-    padding-right: 1rem;
+    padding-right: 1em;
 }
 #nav-contents-lang li:not(:nth-child(2)):hover {
     color: #ffd200;
