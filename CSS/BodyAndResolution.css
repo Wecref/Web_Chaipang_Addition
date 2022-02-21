@@ -33,6 +33,10 @@ body a {
     nav #nav_menu_icon {
         display: flex;
     }
+
+    #contents-category-container > #info {
+        font-size: 1.8em;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -52,6 +56,9 @@ body a {
      #contents-category-container > #title {
         margin-bottom: 3em;
     }
+    #contents-category-container > #info {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 1070px) 
@@ -60,17 +67,19 @@ body a {
         flex-direction: column;
     }
     #nav-contents-menu li:not(:last-child) {
-        padding: 0rem 0rem;
-    }
-
-    #contents-category-container > #info {
-        font-size: 1.2em;
+        padding: 0em 0em;
     }
     #contents-category-container #release-info div p:first-child {
         font-size: 1.2em;
     }
     #contents-category-container #release-info div p:not(:first-child) {
         font-size: 1em;
+    }
+    #contents-category-container > #info {
+        font-size: 1.1em;
+    }
+    #contents-category-container > #comingSoon {
+        font-size: 2em;
     }
 }
 @media screen and (max-width: 900px) {
@@ -83,10 +92,15 @@ body a {
     #contents-main {
         height: 40em;
     }
-    #contents-category-container > #info {
-        font-size: .9em;
+    #contents-category-container > #info .br {
+        display: flex;
     }
-    
+    #contents-category-container > #info {
+        font-size: 1.4em;
+    }
+    #contents-category-container > #comingSoon {
+        font-size: 1.8em;
+    }
 }
 @media screen and (max-width: 700px) {
     #contents-main-InfoA {
@@ -101,15 +115,15 @@ body a {
     }
     #contents-main {
         height: 35em;
-    }
-    #contents-category-container > #info .br {
-        display: flex;
-    }
-    #contents-category-container > #info {
-        font-size: .8em;
-    }
+    }    
     #release-container .br {
         display: none;
+    }
+    #contents-category-container > #info {
+        font-size: 1.2em;
+    }
+    #contents-category-container > #comingSoon {
+        font-size: 1.4em;
     }
 }
 @media screen and (max-width: 530px) {
@@ -134,6 +148,15 @@ body a {
     #contents-category-container #release-info div p:not(:first-child) {
         font-size: .8em;
     }
+    #contents-category-container > #title {
+        font-size: 1.8em;
+    }
+    #contents-category-container > #info {
+        font-size: 1em;
+    }
+    #contents-category-container > #comingSoon {
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 425px) {
     #nav-logo li:nth-child(2) img {
@@ -145,14 +168,17 @@ body a {
     #contents-main-InfoB {
         width: 100%;
     }
-    #contents-category-container > #info {
-        padding: 1em 2em;
-    }
-    #contents-category-container > #title {
-        font-size: 1.8em;
-    }
     #contents-category-container #release-container {
         margin: 1%;
+    }
+    #contents-category-container > #title {
+        font-size: 1.6em;
+    }
+    #contents-category-container > #info {
+        font-size: .8em;
+    }
+    #contents-category-container > #comingSoon {
+        font-size: .8em;
     }
 }
 /* @media screen and (max-width: 1650px) 
