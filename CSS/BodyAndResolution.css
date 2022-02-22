@@ -22,13 +22,13 @@ body a {
     nav #nav-contents {
         display: none;
         flex-direction: column;
-        padding-top: 2rem;
+        padding-top: 2em;
     }    
     nav #nav-contents > ul:not(:first-child){
-        margin-top: 1rem;
+        margin-top: 1em;
     }
     nav #nav-contents-lang li:last-child {
-        padding-right: 0rem;
+        padding-right: 0em;
     }
     nav #nav_menu_icon {
         display: flex;
@@ -36,6 +36,15 @@ body a {
 
     #contents-category-container > #info {
         font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    footer #footer-info ul:nth-child(2) {
+        font-size: 1.0625em;
+    }
+    footer #footer-info ul:not(:nth-child(2)) {
+        font-size: 1em;
     }
 }
 
@@ -59,6 +68,12 @@ body a {
     #contents-category-container > #info {
         font-size: 1.5em;
     }
+    footer #footer-info ul:nth-child(2) {
+        font-size: .9375em;
+    }
+    footer #footer-info ul:not(:nth-child(2)) {
+        font-size: .875em;
+    }
 }
 
 @media screen and (max-width: 1070px) 
@@ -80,6 +95,18 @@ body a {
     }
     #contents-category-container > #comingSoon {
         font-size: 2em;
+    }
+    footer #footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer #footer-info ul:nth-child(2){
+        font-size: 20px;
+        padding: 2em 0em;
+        margin: 0px;
+    }
+    footer #footer-info ul:not(:nth-child(2)) {
+        font-size: 19px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -157,6 +184,12 @@ body a {
     #contents-category-container > #comingSoon {
         font-size: 1em;
     }
+    footer #footer-info ul:nth-child(2){
+        font-size: 1.125em;
+    }
+    footer #footer-info ul:not(:nth-child(2)) {
+        font-size: 1.0625em;
+    }
 }
 @media screen and (max-width: 425px) {
     #nav-logo li:nth-child(2) img {
@@ -180,128 +213,10 @@ body a {
     #contents-category-container > #comingSoon {
         font-size: .8em;
     }
-}
-/* @media screen and (max-width: 1650px) 
-{    
-    nav {
-        flex-direction: column;
-    }
-
-    nav #nav-contents {
-        display: none;
-        flex-direction: column;
-        padding-top: 2rem;
-    }
-    nav #nav-contents > ul:not(:first-child){
-        margin-top: 1rem;
-    }
-    nav #nav_menu_icon {
-        display: flex;
-    }
-    #nav-contents-lang li:last-child {
-        padding-right: 0rem;
-    }
-    
-
-    #contents-main {
-        width: 100%;
-        height: 50rem;
-    }
-    #contents-main-InfoB {
-        width: 50%;
-    }
-    #contents-main p {
-        text-align: center;
-    }
-    #contents-category-container #release-container-link li:first-child img {
-        margin-right: 0rem;
-    }  
-   
-    footer #footer-info ul:nth-child(2) {
-        font-size: 18px;
+    footer #footer-info ul:nth-child(2){
+        font-size: 1em;
     }
     footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 17px;
+        font-size: 0.8em;
     }
 }
-@media screen and (max-width: 1024px) {
-    #nav-contents-menu {
-        flex-direction: column;
-    }
-    #nav-contents-menu li:not(:last-child) {
-        padding: 0rem 0rem;
-    }
-    #contents-main {
-        height: 43rem;
-    }
-    #contents-main-InfoB {
-        width: 80%;
-    }
-    footer #footer-info ul:nth-child(2) {
-        margin: 0px 30px 0px 30px;
-    }
-    footer #footer-info ul:nth-child(2) {
-        font-size: 15px;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 14px;
-    }
-} 
-@media screen and (max-width: 768px) {
-    #nav-logo li:nth-child(2){
-        display: none;
-    }
-    #nav-logo img {
-        width: 15rem;
-    }
-    nav #nav_menu_icon {
-        width: 5rem;
-        height: 5rem;
-    }
-    
-    #contents-main {
-        height: 50rem;
-    }
-    #contents-main-InfoB {
-        width: 90%;
-    }
-    #contents-category-container #release-container > img {
-        margin-right: 0px;
-        margin-bottom: 40px;
-    }
-    
-
-    footer #footer-info ul:nth-child(2) {
-        font-size: 13px;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 425px) {
-    #nav-logo li:nth-child(2){
-        display: none;
-    }
-
-    #contents-main-InfoB {
-        width: 98%;
-    }
-
-    #release-info div p:nth-child(1){
-        font-size: 1.5rem;
-    }
-    #release-info div p:not(:nth-child(1)){
-        font-size: 1.25rem;
-    }
- 
-    #footer-info {
-        flex-direction: column;
-    }
-    #footer-info ul li{
-        text-align: center;
-    }
-    #footer-info ul:nth-child(2){
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-} */

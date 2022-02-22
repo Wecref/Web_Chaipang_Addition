@@ -7,30 +7,30 @@ footer {
 }
 
 footer ul{
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0em;
+    padding: 0em;
 }
 /**/
 footer #footer-link {
     width: 100%;
     display: flex;
-    padding-top: 2.7rem;
-    padding-bottom: .5rem;
+    padding-top: 2.7em;
+    padding-bottom: .5em;
 
     background-color: #FFE5CC;
     justify-content: center;
 }
 footer #footer-link li:nth-child(2){
-    margin: 0rem 3rem;
+    margin: 0em 3em;
 }
 footer #footer-link li:first-child img {
-    width: 2.75rem;
+    width: 2.75em;
 }
 footer #footer-link li:nth-child(2) img {
-    width: 2.3rem;
+    width: 2.3em;
 }
 footer #footer-link li:last-child img {
-    width: 2.6rem;
+    width: 2.6em;
 }
 /**/
 footer #footer-info{
@@ -39,28 +39,29 @@ footer #footer-info{
     justify-content: center;
     font-family: "NanumSquareE";
     color: #ffffff;
-    padding: 1.5rem 1.5rem;
+    padding: 1.5em 1.5em;
     background-color: #FFD2B3;
 }
 
 footer #footer-info ul:nth-child(2) {
-    font-size: 20px;
-}
-footer #footer-info ul:not(:nth-child(2)) {
-    font-size: 19px;
-}
-footer #footer-info ul:not(:nth-child(2)) li:not(:last-child){
-    padding-bottom: .125rem;
-}
-footer #footer-info ul:nth-child(2) {
+    font-size: 1.25em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0px 100px 0px 100px;
 }
+footer #footer-info ul:not(:nth-child(2)) {
+    font-size: 1.1875em;
+}
+footer #footer-info ul:not(:nth-child(2)) li:not(:last-child){
+    padding-bottom: .125em;
+}
 footer #footer-info ul:nth-child(2) li:first-child{
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5em;
+}
+footer #footer-info ul:nth-child(2) li:last-child {
+    text-align: center;
 }
 footer #footer-info ul:nth-child(2) img {
     width: 100%;
