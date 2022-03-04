@@ -1,17 +1,14 @@
 @charset "UTF-8";
-
-
 footer {
     display: flex;
     flex-direction: column;
 }
-
 footer ul{
     margin: 0em;
     padding: 0em;
 }
 /**/
-footer #footer-link {
+footer .link {
     width: 100%;
     display: flex;
     padding-top: 2.7em;
@@ -20,30 +17,30 @@ footer #footer-link {
     background-color: #FFE5CC;
     justify-content: center;
 }
-footer #footer-link li:nth-child(2){
+footer .link li:nth-child(2){
     margin: 0em 3em;
 }
-footer #footer-link li:first-child img {
+footer .link li:first-child img {
     width: 2.75em;
 }
-footer #footer-link li:nth-child(2) img {
+footer .link li:nth-child(2) img {
     width: 2.3em;
 }
-footer #footer-link li:last-child img {
+footer .link li:last-child img {
     width: 2.6em;
 }
 /**/
-footer #footer-info{
+footer .info{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "NanumSquareE";
+    font-family: "NanumSquareB";
     color: #ffffff;
     padding: 1.5em 1.5em;
     background-color: #FFD2B3;
 }
 
-footer #footer-info ul:nth-child(2) {
+footer .info ul:nth-child(2) {
     font-size: 1.25em;
     display: flex;
     flex-direction: column;
@@ -51,18 +48,46 @@ footer #footer-info ul:nth-child(2) {
     justify-content: center;
     margin: 0px 100px 0px 100px;
 }
-footer #footer-info ul:not(:nth-child(2)) {
-    font-size: 1.1875em;
+footer .info ul:not(:nth-child(2)) {
+    font-size: 1.125em;
+    width: 22em;
 }
-footer #footer-info ul:not(:nth-child(2)) li:not(:last-child){
+footer .info ul:not(:nth-child(2)) li:not(:last-child){
     padding-bottom: .125em;
 }
-footer #footer-info ul:nth-child(2) li:first-child{
-    padding-bottom: 1.5em;
+footer .info ul:nth-child(2) li:first-child{
+    padding: 1em 0em 1.5em 0em;
 }
-footer #footer-info ul:nth-child(2) li:last-child {
+footer .info ul:nth-child(2) li:last-child {
     text-align: center;
 }
-footer #footer-info ul:nth-child(2) img {
+footer .info ul:nth-child(2) img {
     width: 100%;
+}
+/**/
+@media screen and (max-width: 1385px) {
+    footer .info {
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 1150px) {
+    footer .info {
+        font-size: .6em;
+    }
+}
+@media screen and (max-width: 920px) {
+    footer .info{
+        flex-direction: column;
+        font-size: 1em;
+        text-align: center;
+        /* align-items: center; */
+    }
+    footer .info ul:nth-child(2) {
+        margin: 2em 0em;
+    }
+}
+@media screen and (max-width: 460px) {
+    footer .info{
+        font-size: .8em;
+    }
 }

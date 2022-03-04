@@ -10,6 +10,7 @@
     height: .25em;
     /* background-color: red; */
     background-color: #F5F5F5;
+    margin-bottom: 2em;
 }
 /**/
 #contents-category-container{
@@ -34,7 +35,7 @@
     /* width: 55em; */
     width: auto;
     background-color: #FF75C7;
-    padding: .7em 1em;
+    padding: .4em 1em;
     margin: 0em 1em;
     border-radius: 100em / 100em;
     color: #ffffff;
@@ -83,6 +84,7 @@
 #contents-category-container #release-info img{
     width: 4.1em;
     align-self: flex-start;
+    margin-top: -.5em;
     margin-right: 1em;
 }
 #contents-category-container #release-info div {

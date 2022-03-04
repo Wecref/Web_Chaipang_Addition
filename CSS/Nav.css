@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 nav {
-    width: auto;
+    width: auto;    
     background-color: rgb(255, 255, 255);
 
     display: flex;
@@ -15,10 +15,12 @@ nav {
 }
 /**/
 nav #nav-main{
+    height: 70.74px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/**/
 nav #nav_menu_icon {
     width: 4em;
     height: 4em;

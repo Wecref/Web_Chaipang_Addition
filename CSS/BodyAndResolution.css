@@ -17,7 +17,7 @@ body a {
 {
     nav { 
         flex-direction: column; 
-        padding: .25em;
+        height: auto;
     }
     nav #nav-contents {
         display: none;
@@ -36,15 +36,6 @@ body a {
 
     #contents-category-container > #info {
         font-size: 1.8em;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    footer #footer-info ul:nth-child(2) {
-        font-size: 1.0625em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 1em;
     }
 }
 
@@ -68,12 +59,6 @@ body a {
     #contents-category-container > #info {
         font-size: 1.5em;
     }
-    footer #footer-info ul:nth-child(2) {
-        font-size: .9375em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: .875em;
-    }
 }
 
 @media screen and (max-width: 1070px) 
@@ -95,18 +80,6 @@ body a {
     }
     #contents-category-container > #comingSoon {
         font-size: 2em;
-    }
-    footer #footer-info {
-        flex-direction: column;
-        text-align: center;
-    }
-    footer #footer-info ul:nth-child(2){
-        font-size: 20px;
-        padding: 2em 0em;
-        margin: 0px;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 19px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -184,12 +157,6 @@ body a {
     #contents-category-container > #comingSoon {
         font-size: 1em;
     }
-    footer #footer-info ul:nth-child(2){
-        font-size: 1.125em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 1.0625em;
-    }
 }
 @media screen and (max-width: 425px) {
     #nav-logo li:nth-child(2) img {
@@ -212,11 +179,5 @@ body a {
     }
     #contents-category-container > #comingSoon {
         font-size: .8em;
-    }
-    footer #footer-info ul:nth-child(2){
-        font-size: 1em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 0.8em;
     }
 }
