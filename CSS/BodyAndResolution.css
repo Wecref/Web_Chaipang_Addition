@@ -53,7 +53,7 @@ body a {
     #contents-main {
         height: 45em;
     }
-     #contents-category-container > #title {
+    #contents-category-container > #title {
         margin-bottom: 3em;
     }
     #contents-category-container > #info {
