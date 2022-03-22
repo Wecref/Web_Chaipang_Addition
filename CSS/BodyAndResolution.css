@@ -1,155 +1,153 @@
 @charset "UTF-8";
 html,
 body {
-    background-color: white;
-    margin: 0px;
-    max-width: 1920px;
-    margin: 0 auto;
-    word-break: keep-all;
+  background-color: white;
+  margin: 0px;
+  max-width: 1920px;
+  margin: 0 auto;
+  word-break: keep-all;
 }
 body ul {
-    list-style: none;
+  list-style: none;
 }
 body a {
-    text-decoration: none;
+  text-decoration: none;
 }
-@media screen and (max-width: 1650px) 
-{
-    #contents-category-container > #info {
-        font-size: 1.8em;
-    }
+@media screen and (max-width: 1650px) {
+  #contents-category-container > #info {
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    #contents-main-InfoA {
-        padding: .8em 1.8em;
-        margin: 0em 1em;
-    }
-    #contents-main-InfoA p {
-        font-size: 1.3em;
-    }
-    #contents-main-InfoB {
-        font-size: .9em;
-    }
-    #contents-main {
-        height: 45em;
-    }
-     #contents-category-container > #title {
-        margin-bottom: 3em;
-    }
-    #contents-category-container > #info {
-        font-size: 1.5em;
-    }
+  #contents-main-InfoA {
+    padding: 0.8em 1.8em;
+    margin: 0em 1em;
+  }
+  #contents-main-InfoA p {
+    font-size: 1.3em;
+  }
+  #contents-main-InfoB {
+    font-size: 0.9em;
+  }
+  #contents-main {
+    height: 45em;
+  }
+  #contents-category-container > #title {
+    margin-bottom: 3em;
+  }
+  #contents-category-container > #info {
+    font-size: 1.5em;
+  }
 }
 
-@media screen and (max-width: 1070px) 
-{
-    #contents-category-container #release-info div p:first-child {
-        font-size: 1.2em;
-    }
-    #contents-category-container #release-info div p:not(:first-child) {
-        font-size: 1em;
-    }
-    #contents-category-container > #info {
-        font-size: 1.1em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 2em;
-    }
+@media screen and (max-width: 1070px) {
+  #contents-category-container #release-info div p:first-child {
+    font-size: 1.2em;
+  }
+  #contents-category-container #release-info div p:not(:first-child) {
+    font-size: 1em;
+  }
+  #contents-category-container > #info {
+    font-size: 1.1em;
+  }
+  #contents-category-container > #comingSoon {
+    font-size: 2em;
+  }
 }
 @media screen and (max-width: 900px) {
-    #contents-main-InfoA p {
-        font-size: 1em;
-    }
-    #contents-main-InfoB {
-        font-size: .7em;
-    }
-    #contents-main {
-        height: 40em;
-    }
-    #contents-category-container > #info .br {
-        display: flex;
-    }
-    #contents-category-container > #info {
-        font-size: 1.4em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 1.8em;
-    }
+  #contents-main-InfoA p {
+    font-size: 1em;
+  }
+  #contents-main-InfoB {
+    font-size: 0.7em;
+  }
+  #contents-main {
+    height: 40em;
+  }
+  #contents-category-container > #info br {
+    display: flex;
+  }
+  #contents-category-container > #info {
+    font-size: 1.4em;
+  }
+  #contents-category-container > #comingSoon {
+    font-size: 1.8em;
+  }
 }
 @media screen and (max-width: 700px) {
-    #contents-main-InfoA {
-        padding: .5em 1em;
-        margin: 0em 1em;
-    }
-    #contents-main-InfoA p {
-        font-size: .8em;
-    }
-    #contents-main-InfoB {
-        font-size: .55em;
-    }
-    #contents-main {
-        height: 35em;
-    }    
-    #release-container .br {
-        display: none;
-    }
-    #contents-category-container > #info {
-        font-size: 1.2em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 1.4em;
-    }
+  #contents-main-InfoA {
+    padding: 0.5em 1em;
+    margin: 0em 1em;
+  }
+  #contents-main-InfoA p {
+    font-size: 0.8em;
+  }
+  #contents-main-InfoB {
+    font-size: 0.55em;
+  }
+  #contents-main {
+    height: 35em;
+  }
+  #release-container br {
+    display: none;
+  }
+  #contents-category-container > #info {
+    font-size: 1.2em;
+  }
+  #contents-category-container > #comingSoon {
+    font-size: 1.4em;
+  }
 }
 @media screen and (max-width: 530px) {
-    #contents-main img {
-        height: 10em;
-    }
-    #contents-main-InfoA .br{
-        display: flex;
-    }
-    #contents-main-InfoA p {
-        font-size: .69em;
-    }
-    #contents-main-InfoB {
-        font-size: .45em;
-    }
-    #contents-main {
-        height: 32em;
-    }
-    #contents-category-container #release-info div p:first-child {
-        font-size: 1em;
-    }
-    #contents-category-container #release-info div p:not(:first-child) {
-        font-size: .8em;
-    }
-    #contents-category-container > #title {
-        font-size: 1.8em;
-    }
-    #contents-category-container > #info {
-        font-size: 1em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 1em;
-    }
+  #contents-main img {
+    height: 10em;
+  }
+  #contents-main-InfoA br {
+    display: flex;
+  }
+  #contents-main-InfoA p {
+    font-size: 0.69em;
+  }
+  #contents-main-InfoB {
+    font-size: 0.45em;
+  }
+  #contents-main {
+    height: 32em;
+  }
+  #contents-category-container #release-info div p:first-child {
+    font-size: 1em;
+  }
+  #contents-category-container #release-info div p:not(:first-child) {
+    font-size: 0.8em;
+  }
+  #contents-category-container > #title {
+    font-size: 1.8em;
+  }
+  #contents-category-container > #info {
+    font-size: 1em;
+  }
+  #contents-category-container > #comingSoon {
+    font-size: 1em;
+  }
 }
 @media screen and (max-width: 425px) {
-    #contents-main-InfoA p {
-        font-size: .6em;
-    }
-    #contents-main-InfoB {
-        width: 100%;
-    }
-    #contents-category-container #release-container {
-        margin: 1%;
-    }
-    #contents-category-container > #title {
-        font-size: 1.6em;
-    }
-    #contents-category-container > #info {
-        font-size: .8em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: .8em;
-    }
+  #contents-main-InfoA p {
+    font-size: 0.6em;
+  }
+  #contents-main-InfoB {
+    width: 100%;
+  }
+  #contents-category-container #release-container {
+    margin: 1%;
+  }
+  #contents-category-container > #title {
+    font-size: 1.6em;
+  }
+  #contents-category-container > #info {
+    font-size: 0.8em;
+  }
+  #contents-category-container > #comingSoon {
+    font-size: 0.8em;
+  }
 }
