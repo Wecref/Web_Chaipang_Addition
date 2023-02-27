@@ -49,7 +49,7 @@ nav .menus {
 nav .menus li:not(:last-child) {
     padding: 0em 1em 0em 0em;
 }
-nav .menus li:nth-child(-n+4):hover {
+nav .menus li:nth-child(-n+5):hover {
     color: #ffd200;
     cursor: pointer;
 }

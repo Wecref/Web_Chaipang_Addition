@@ -39,6 +39,7 @@ body a {
   #contents-category-container > #info {
     font-size: 1.5em;
   }
+    
 }
 
 @media screen and (max-width: 1070px) {
@@ -74,6 +75,10 @@ body a {
   #contents-category-container > #comingSoon {
     font-size: 1.8em;
   }
+    #contents-category-container:first-child #release-container-imgs {
+      /* background-color: #ff75c7; */
+      width: 90%;
+    }
 }
 @media screen and (max-width: 700px) {
   #contents-main-InfoA {

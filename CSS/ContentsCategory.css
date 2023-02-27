@@ -108,6 +108,10 @@
   margin: 0em;
   padding: 2em 0em;
 }
+#contents-category-container:first-child #release-container-imgs {
+  /* background-color: #ff75c7; */
+  width: 66%;
+}
 #contents-category-container #release-container-imgs img {
   width: 100%;
   height: auto;
