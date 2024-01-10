@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
-.en.nav-menus {
-    font-size: .9em;
+@media screen and (max-width: 1820px) {
+    nav.en {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 1649px) {
+    nav.en {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+    nav.en {
+        font-size: .7em;
+    }
 }
