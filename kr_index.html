@@ -1,313 +1,363 @@
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="Keywords"
-        content="차이팡, 차이팡 수학, 위크리프, 유아 교육, 어린이 교육, 어린이 수학, 어린이 사칙연산, 어린이 덧셈, 어린이 뺄셈, 어린이 곱셈, 어린이 구구단, 게임 수학" />
     <meta name="Description" content="차이팡 수학은 게임하면서 덧셈, 뺄셈, 곱셈의 계산 속도와 정확도를 향상시키는 놀이 기반 계산학습 프로그램입니다." />
+    <meta name="author" content="K.Moon" />
+    <meta name="publisher" content="Wecref" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="email" content="wecref.dev@gmail.com" />
+    <meta name="date" content="2022-02-22T05:12:00+09:00" />
+    <meta name="copyright" content="2022 Wecref Co., Ltd." />
 
-    <meta http-equiv="Subject" content="차이팡 수학은 게임하면서 덧셈, 뺄셈, 곱셈의 계산 속도와 정확도를 향상시키는 놀이 기반 계산학습 프로그램입니다." />
-    <meta http-equiv="Title" content="차이팡 수학" />
-    <meta http-equiv="Author" content="K.Moon" />
-    <meta http-equiv="publisher" content="Wecref" />
-    <meta http-equiv="Other Agent" content="K.Moon" />
-    <meta http-equiv="Generator" content="Visual Studio Code" />
-    <meta http-equiv="Reply-To" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Email" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Distribution" content="K.Moon" />
-    <meta http-equiv="Copyright" content="2022 Wecref Co., Ltd." />
-    <meta name="Date" content="2022-02-22T05:12:00+09:00" />
-    <meta http-equiv="Content-Script-Type" content="Text/javascript" />
-    <meta property="https://math.chaipangkids.com/" content="website" />
-    <!-- 기본적 웹 설정 og 메타태그 -->
+    <!-- Open Graph 메타태그 -->
     <meta property="og:url" content="https://math.chaipangkids.com/" />
     <meta property="og:title" content="차이팡 수학" />
     <meta property="og:image" content="https://math.chaipangkids.com/Resources/Img/share.png" />
-    <meta property="og:image:secure_url" content="https://math.chaipangkids.com/Resources/Img/share.png" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:description" content="차이팡 수학은 게임하면서 덧셈, 뺄셈, 곱셈의 계산 속도와 정확도를 향상시키는 놀이 기반 계산학습 프로그램입니다." />
+    <meta property="og:site_name" content="차이팡 수학" />
+    <meta property="og:locale" content="ko_KR" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="차이팡 공유 썸네일" />
-    <meta property="og:description" content="차이팡 수학은 게임하면서 덧셈, 뺄셈, 곱셈의 계산 속도와 정확도를 향상시키는 놀이 기반 계산학습 프로그램입니다." />
-    <meta property="og:site_name" content="차이팡 수학" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="ko_KR" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="Resources/Img/wecref_cion.png" />
+    <link rel="shortcut icon" type="image/png" href="./Resources/Img/wecref_cion.png" />
     <title>차이팡 수학</title>
 
     <link rel="stylesheet" href="./main.css" />
-    <script type="module" src="./main.js" defer="defer"></script>
+    <script type="module" src="./main.js"></script>
 </head>
+<span id="menu-main"></span>
 
 <body>
-    <span id="menu-main"></span>
     <nav>
-        <div class="main">
-            <div class="logo">
-                <ul class="MarginZero">
-                    <!-- <li><img src="./Resources/Img/Math_2.png" /></li> -->
-                    <li><img src="./Resources/Img/Kr/Math_3.png" /></li>
-                </ul>
-            </div>
-            <img class="menu_icon" src="./Resources/Img/list_white_48dp.svg" alt="메뉴 아이콘" />
+        <div class="nav-header">
+            <a href="/" class="logo">
+                <img src="./Resources/Img/Kr/Math_3.png" alt="위크리프 로고" />
+            </a>
+            <button class="menu-toggle" aria-label="메뉴 토글">
+                <img src="./Resources/Img/list_white_48dp.svg" alt="메뉴 아이콘" />
+            </button>
         </div>
-        <div class="contents NanumB Font20Size">
-            <ul class="menus MarginZero PaddingZero">
-                <li data-href="#menu-main">소개</li>
-                <li data-href="#menu-math">차이팡 수학</li>
-                <li data-href="#menu-addition">차이팡 덧셈</li>
-                <li data-href="#menu-subtraction">차이팡 뺄셈</li>
-                <li data-href="#menu-multiplication">차이팡 구구단</li>
-                <li>|</li>
+        <div class="nav-body">
+            <ul class="nav-menus">
+                <li><a href="#menu-main">소개</a></li>
+                <li><a href="#menu-math">차이팡 수학</a></li>
+                <li><a href="#menu-addition">차이팡 덧셈</a></li>
+                <li><a href="#menu-subtraction">차이팡 뺄셈</a></li>
+                <li><a href="#menu-multiplication">차이팡 구구단</a></li>
                 <li><a href="https://chaipangkids.com/kr_index.html">차이팡 키즈</a></li>
                 <li><a href="https://wecref.com/kr_index.html">㈜위크리프</a></li>
             </ul>
-            <ul class="link">
+            <ul class="social-links">
                 <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
-                            src="./Resources/Img/Math_4.png" /></a></li>
-                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png" /></a></li>
-                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png" /></a></li>
+                            src="./Resources/Img/Math_4.png" alt="유튜브" /></a></li>
+                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png"
+                            alt="인스타그램" /></a></li>
+                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png"
+                            alt="블로그" /></a>
+                </li>
             </ul>
-            <ul class="lang MarginZero PaddingZero">
-                <li data-lang="kr_index.html" class="clicked">KOR</li>
-                <li>|</li>
-                <li data-lang="en_index.html">ENG</li>
+            <ul class="language-selector">
+                <li><a href="kr_index.html" class="active">KOR</a></li>
+                <li><a href="en_index.html">ENG</a></li>
             </ul>
         </div>
     </nav>
+
     <div id="contents-main">
-        <div id="contents-main-InfoA">
-            <p class="MarginZero NanumEB Font30Size">우리 아이, 왜 계산을 어려워 할까요?</p>
-            <p class="MarginZero NanumEB Font30Size">어려운 사칙연산을 쉽게 익히고 빠르게 해낼 수 없을까요?</p>
+        <div class="pink-rectangle">
+            <p>우리 아이, 왜 계산을 어려워 할까요?</p>
+            <p>어려운 사칙연산을 쉽게 익히고 빠르게 해낼 수 없을까요?</p>
         </div>
-        <img src="./Resources/Img/Kr/Math_7.png" />
-        <div id="contents-main-InfoB">
-            <p class="NanumB Font35Size"><span class="TxtNeon">차이팡 수학</span>은 차이팡 프렌즈와 함께 게임하면서, 덧셈, 뺄셈, 곱셈의 <span
-                    class="TxtNeon">계산 속도와 정확도를 향상</span>시키는 <span class="TxtNeon">놀이 기반 계산 학습 프로그램</span>입니다.</p>
+        <img src="./Resources/Img/Kr/Math_7.png" alt="차이팡 수학 로고" />
+        <div class="info">
+            <p>
+                <span class="TxtNeon00">차이팡 수학</span>은 차이팡 프렌즈와 함께 게임하면서, <br class="responsive-break">
+                덧셈, 뺄셈, 곱셈의 <span class="TxtNeon00">계산 속도와 정확도를 향상</span>시키는 <br class="responsive-break">
+                <span class="TxtNeon00">놀이 기반 계산 학습 프로그램</span>입니다.
+            </p>
         </div>
     </div>
-    <span id="menu-math"></span>
     <div id="waveDecoUp"></div>
-    <div id="contents-category">
-        <div id="contents-category-container">
-            <p id="title" class="NanumEB Font45Size">차이팡 수학</p>
-            <img id="title-img" src="./Resources/Img/Kr/Math/Title.png" />
-            <p id="info" class="NanumEB Font40Size">수학의 기초가 되는 연산 훈련, 차이팡 수학으로 완성하세요!</p>
-            <div id="release-container">
-                <img src="./Resources/Img/ChaipangMath_icon.png" />
-                <div id="release-container-info">
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-1.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">초등학생 1~2학년 덧셈, 뺄셈 연산 완전 정복</p>
-                            <p class="NanumR Font20Size">1~2학년 교과서 속 덧셈, 뺄셈 연산을 모두 모았어요.</p>
-                            <p class="NanumR Font20Size">교과서 진도에 맞춘 커리큘럼으로, 학교 수업도 준비해요.</p>
-                        </div>
-                    </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-2.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">연산 속도와 정확도, 실력의 빠른 향상</p>
-                            <p class="NanumR Font20Size">각 강의 주제에 따라 다양한 형태의 문제가 반복됩니다.</p>
-                            <p class="NanumR Font20Size">사물을 활용한 문제를 통해 직관적으로 연산을 익힌 뒤,<br />숫자를 직접 대입하여 연산 문제를 반복
-                                훈련합니다.</p>
-                        </div>
-                    </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-3.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">차이팡 환상의 세계에서 흥미진진한 연산 게임</p>
-                            <p class="NanumR Font20Size">차이팡 프렌즈와 함께 여행하며 게임을 즐겨요.</p>
-                            <p class="NanumR Font20Size">환상의 세계에서 쌓은 추억을 앨범으로 만들어요.</p>
-                            <p class="NanumR Font20Size">모든 여정이 끝나면, 미코와 함께 마지막 승부를 겨뤄요.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul id="release-container-imgs" class="">
-                <li><img src="./Resources/Img/Kr/Math/Into1.png" /></li>
-                <li><img src="./Resources/Img/Kr/Math/Into2.png" /></li>
-                <li><img src="./Resources/Img/Kr/Math/Into3.png" /></li>
-                <li><img src="./Resources/Img/Kr/Math/Into4.png" /></li>
-                <li><img src="./Resources/Img/Kr/Math/Into5.png" /></li>
-                <li><img src="./Resources/Img/Kr/Math/Into6.png" /></li>
-            </ul>
-            <ul id="release-container-link">
-                <li><a href="https://play.google.com/store/apps/details?id=com.wecref.edu.chaipang.math&hl=KR"><img
-                            src="./Resources/Img/source.png" /></a></li>
-                <li><a href="https://apps.apple.com/kr/app/chaipang-math/id6449987310"><img
-                            src="./Resources/Img/source_1.png" /></a></li>
-            </ul>
+
+    <span id="menu-math"></span>
+    <div class="contents-card">
+        <div class="title">
+            <p>차이팡 수학</p>
+            <img src="./Resources/Img/Kr/Math/Title.png" alt="차이팡 수학 로고" />
         </div>
-        <span id="menu-addition"></span>
-        <div id="newline"></div>
-        <div id="contents-category-container">
-            <p id="title" class="NanumEB Font45Size">차이팡 덧셈</p>
-            <img id="title-img" src="./Resources/Img/Kr/Add/Title.png" />
-            <p id="info" class="NanumEB Font40Size">한 자릿수 덧셈놀이를 즐겨보세요. 아이들의 덧셈 실력이 쑥쑥!</p>
-            <div id="release-container">
-                <img src="./Resources/Img/AdditionIcon.png" />
-                <div id="release-container-info">
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-1.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">한 자릿수 덧셈의 속도와 정확도 향상</p>
-                            <p class="NanumR Font20Size">유아동에게 알맞은 난이도로 구성하였습니다.</p>
-                            <p class="NanumR Font20Size">놀이 상대보다 빠르게 답을 맞춰야 합니다.</p>
-                        </div>
-                    </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-2.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">어린이들이 스스로 찾아 하는 덧셈</p>
-                            <p class="NanumR Font20Size">유치원을 배경으로, 친구들과 함께하는 카드 놀이 형태로 진행됩니다.</p>
-                        </div>
-                    </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-3.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">덧셈 실력 향상을 위한 동기 부여</p>
-                            <p class="NanumR Font20Size">차이팡 프렌즈 50명과의 놀이 결과에 따라 순위가 변동됩니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul id="release-container-imgs" class="">
-                <li><img src="./Resources/Img/Kr/Add/Into1.png" /></li>
-                <li><img src="./Resources/Img/Kr/Add/Into2.png" /></li>
-                <li><img src="./Resources/Img/Kr/Add/Into3.png" /></li>
-                <li><img src="./Resources/Img/Kr/Add/Into4.png" /></li>
-                <li><img src="./Resources/Img/Kr/Add/Into5.png" /></li>
-            </ul>
-            <ul id="release-container-link">
-                <li><a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.addition"><img
-                            src="./Resources/Img/source.png" /></a></li>
-                <li><a href="https://apps.apple.com/kr/app/chaipang-addition/id1608482068"><img
-                            src="./Resources/Img/source_1.png" /></a></li>
-            </ul>
+        <div class="pink-rectangle">
+            <p>차이팡 프렌즈와 차이팡 수학 환상의 세계로!</p>
         </div>
-        <span id="menu-subtraction"></span>
-        <div id="newline"></div>
-        <div id="contents-category-container">
-            <p id="title" class="NanumEB Font45Size">차이팡 뺄셈</p>
-            <img id="title-img" src="./Resources/Img/Kr/Sub/Title.png" />
-            <p id="info" class="NanumEB Font40Size">한 단계 업그레이드, 뺄셈 놀이를 즐겨보세요.</p>
-            <div id="release-container">
-                <img src="./Resources/Img/SubtractionIcon.png" />
-                <div id="release-container-info">
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-1.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">빠르고 정확한 뺄셈 계산</p>
-                            <p class="NanumR Font20Size">뺄셈 속도는 많은 문제 풀이를 통해 향상됩니다.</p>
-                            <p class="NanumR Font20Size">놀이 상대보다 빠르고 정확하게 답을 찾도록 구성하였습니다.</p>
-                        </div>
+
+        <div class="info">
+            <img class="icon" src="./Resources/Img/ChaipangMath_icon.png" alt="차이팡 수학 아이콘" />
+            <div class="texts">
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-1.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>초등학생 1~2학년 덧셈, 뺄셈 연산 완전 정복!</h1>
+                        <p>1~2학년 교과서에 나오는 덧셈과 뺄셈 연산을 모두 모았습니다.</p>
                     </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-2.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">즐겁게 익히는 뺄셈</p>
-                            <p class="NanumR Font20Size">지루한 계산 문제를 게임을 통해 연습합니다.</p>
-                        </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-2.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>반복학습으로 연산능력 향상!</h1>
+                        <p>연산 게임을 즐기다보면 속도와 정확도, 실력이 향상됩니다.</p>
                     </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-3.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">저절로 몰입되는 놀이식 연습</p>
-                            <p class="NanumR Font20Size">차이팡 프렌즈와 놀다 보면, 어느새 뺄셈 실력이 향상됩니다.</p>
-                        </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-3.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>60가지 다양한 테마에서 익히는 덧셈과 뺄셈</h1>
+                        <p>환상의 세계를 여행하며 즐겁게 덧셈과 뺄셈을 익힐 수 있습니다.</p>
                     </div>
                 </div>
             </div>
-            <ul id="release-container-imgs" class="">
-                <li><img src="./Resources/Img/Kr/Sub/Info1.png" /></li>
-                <li><img src="./Resources/Img/Kr/Sub/Info2.png" /></li>
-                <li><img src="./Resources/Img/Kr/Sub/Info3.png" /></li>
-                <li><img src="./Resources/Img/Kr/Sub/Info4.png" /></li>
-                <li><img src="./Resources/Img/Kr/Sub/Info5.png" /></li>
-            </ul>
-            <ul id="release-container-link">
-                <li><a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.subtraction"><img
-                            src="./Resources/Img/source.png" /></a></li>
-                <li><a href="https://apps.apple.com/kr/app/chaipang-subtraction/id1614401871"><img
-                            src="./Resources/Img/source_1.png" /></a></li>
-            </ul>
         </div>
-        <span id="menu-multiplication"></span>
-        <div id="newline"></div>
-        <div id="contents-category-container">
-            <p id="title" class="NanumEB Font45Size">차이팡 구구단</p>
-            <img id="title-img" src="./Resources/Img/Kr/Mul/Title.png" />
-            <p id="info" class="NanumEB Font40Size">차이팡 프렌즈와 함께 익히는 구구단, 곱셈을 해봐요.</p>
-            <div id="release-container">
-                <img src="./Resources/Img/MultiplicationIcon.png" />
-                <div id="release-container-info">
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-1.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">학습지가 필요 없는 구구단 연습</p>
-                            <p class="NanumR Font20Size">구구단 학습지, 우리 아이가 지루해하나요?</p>
-                            <p class="NanumR Font20Size">차이팡 프렌즈 캐릭터와 놀이로 연습합니다.</p>
-                        </div>
+
+        <div class="showcase-type01">
+            <img src="Resources/Img/Kr/Math/Into1.png" alt="차이팡 수학 앱 사진">
+            <img src="Resources/Img/Kr/Math/Into2.png" alt="차이팡 수학 앱 사진">
+            <img src="Resources/Img/Kr/Math/Into3.png" alt="차이팡 수학 앱 사진">
+            <img src="Resources/Img/Kr/Math/Into4.png" alt="차이팡 수학 앱 사진">
+            <img src="Resources/Img/Kr/Math/Into5.png" alt="차이팡 수학 앱 사진">
+            <img src="Resources/Img/Kr/Math/Into6.png" alt="차이팡 수학 앱 사진">
+        </div>
+
+        <div class="link">
+            <a href="https://play.google.com/store/apps/details?id=com.wecref.edu.chaipang.math&hl=KR">
+                <img src="Resources/Img/website_Chaipangkids_b_google.png" alt="수학 구글 스토어"></a>
+            <a href="https://apps.apple.com/kr/app/chaipang-math/id6449987310">
+                <img src="Resources/Img/website_Chaipangkids_b_appstore.png" alt="수학 애플 스토어"></a>
+        </div>
+
+        <div class="showcase-type03">
+            <div class="area">
+                <img src="Resources/Img/website_Chaipangmath_1.png" alt="수학 쇼케이스 빅 사진" class="big">
+                <div class="small">
+                    <img src="Resources/Img/website_Chaipangmath_3.png" alt="수학 쇼케이스 빅 사진">
+                    <img src="Resources/Img/website_Chaipangmath_4.png" alt="수학 쇼케이스 빅 사진">
+                    <img src="Resources/Img/website_Chaipangmath_5.png" alt="수학 쇼케이스 빅 사진">
+                </div>
+            </div>
+            <div class="area">
+                <img src="Resources/Img/website_Chaipangmath_2.png" alt="수학 쇼케이스 빅 사진" class="big">
+                <div class="small">
+                    <img src="Resources/Img/website_Chaipangmath_6.png" alt="수학 쇼케이스 빅 사진">
+                    <img src="Resources/Img/website_Chaipangmath_7.png" alt="수학 쇼케이스 빅 사진">
+                    <img src="Resources/Img/website_Chaipangmath_8.png" alt="수학 쇼케이스 빅 사진">
+                </div>
+            </div>
+        </div>
+
+        <div class="newLine"></div>
+    </div>
+
+    <span id="menu-addition"></span>
+    <div class="contents-card">
+        <div class="title">
+            <p>차이팡 덧셈</p>
+            <img src="./Resources/Img/Kr/Add/Title.png" alt="차이팡 덧셈 로고" />
+        </div>
+        <div class="pink-rectangle">
+            <p>한 자릿수 덧셈놀이를 즐겨보세요. 아이들의 덧셈 실력이 쑥쑥!</p>
+        </div>
+
+        <div class="info">
+            <img class="icon" src="./Resources/Img/AdditionIcon.png" alt="차이팡 덧셈 아이콘" />
+            <div class="texts">
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-1.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>한 자릿수 덧셈의 속도와 정확도 향상</h1>
+                        <p>유아동에게 알맞은 난이도로 구성하였습니다.</p>
+                        <p>놀이 상대보다 빠르게 답을 맞춰야 합니다.</p>
                     </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-2.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">빠르고 정확한 구구단 계산</p>
-                            <p class="NanumR Font20Size">1단부터 9단까지, 한 번에 답이 나오지 않나요?</p>
-                            <p class="NanumR Font20Size">차이팡 프렌즈와 함께 빠르고 정확하게 답을 찾을 수 있습니다.</p>
-                        </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-2.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>어린이들이 스스로 찾아 하는 덧셈</h1>
+                        <p>유치원을 배경으로, 친구들과 함께하는 카드 놀이 형태로 진행됩니다.</p>
                     </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/Kr/Math_10-3.png" />
-                        <div>
-                            <p class="NanumEB Font25Size">저절로 향상되는 구구단 실력</p>
-                            <p class="NanumR Font20Size">차이팡 프렌즈와 게임 대결을 하다 보면,
-                                <br> 우리 아이도 구구단 실력자가 될 수 있습니다.
-                            </p>
-                        </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-3.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>덧셈 실력 향상을 위한 동기 부여</h1>
+                        <p>차이팡 프렌즈 50명과의 놀이 결과에 따라 순위가 변동됩니다.</p>
                     </div>
                 </div>
             </div>
-            <ul id="release-container-imgs" class="">
-                <li><img src="./Resources/Img/Kr/Mul/Info1.png" /></li>
-                <li><img src="./Resources/Img/Kr/Mul/Info2.png" /></li>
-                <li><img src="./Resources/Img/Kr/Mul/Info3.png" /></li>
-                <li><img src="./Resources/Img/Kr/Mul/Info4.png" /></li>
-                <li><img src="./Resources/Img/Kr/Mul/Info5.png" /></li>
-            </ul>
-            <ul id="release-container-link">
-                <li><a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.multiplication"><img
-                            src="./Resources/Img/source.png" /></a></li>
-                <li><a href="https://apps.apple.com/kr/app/chaipang-multiplication/id1615331704"><img
-                            src="./Resources/Img/source_1.png" /></a></li>
-            </ul>
+        </div>
+
+        <div class="showcase-type02">
+            <img src="Resources/Img/Kr/Add/Into1.png" alt="차이팡 덧셈 앱 사진">
+            <img src="Resources/Img/Kr/Add/Into2.png" alt="차이팡 덧셈 앱 사진">
+            <img src="Resources/Img/Kr/Add/Into3.png" alt="차이팡 덧셈 앱 사진">
+            <img src="Resources/Img/Kr/Add/Into4.png" alt="차이팡 덧셈 앱 사진">
+            <img src="Resources/Img/Kr/Add/Into5.png" alt="차이팡 덧셈 앱 사진">
+        </div>
+
+        <div class="link">
+            <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.addition">
+                <img src="Resources/Img/website_Chaipangkids_b_google.png" alt="수학 구글 스토어"></a>
+            <a href="https://apps.apple.com/kr/app/chaipang-addition/id1608482068">
+                <img src="Resources/Img/website_Chaipangkids_b_appstore.png" alt="수학 애플 스토어"></a>
+        </div>
+
+
+
+        <div class="newLine"></div>
+    </div>
+
+    <span id="menu-subtraction"></span>
+    <div class="contents-card">
+        <div class="title">
+            <p>차이팡 뺄셈</p>
+            <img src="./Resources/Img/Kr/Sub/Title.png" alt="차이팡 뺄셈 로고" />
+        </div>
+        <div class="pink-rectangle">
+            <p>한 단계 업그레이드, 뺄셈 놀이를 즐겨보세요.</p>
+        </div>
+
+        <div class="info">
+            <img class="icon" src="./Resources/Img/SubtractionIcon.png" alt="차이팡 뺄셈 아이콘" />
+            <div class="texts">
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-1.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>빠르고 정확한 뺄셈 계산</h1>
+                        <p>뺄셈 속도는 많은 문제 풀이를 통해 향상됩니다.</p>
+                        <p>놀이 상대보다 빠르고 정확하게 답을 찾도록 구성하였습니다.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-2.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>즐겁게 익히는 뺄셈</h1>
+                        <p>지루한 계산 문제를 게임을 통해 연습합니다.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-3.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>저절로 몰입되는 놀이식 연습</h1>
+                        <p>차이팡 프렌즈와 놀다 보면, 어느새 뺄셈 실력이 향상됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase-type02">
+            <img src="Resources/Img/Kr/Sub/Info1.png" alt="차이팡 뺄셈 앱 사진">
+            <img src="Resources/Img/Kr/Sub/Info2.png" alt="차이팡 뺄셈 앱 사진">
+            <img src="Resources/Img/Kr/Sub/Info3.png" alt="차이팡 뺄셈 앱 사진">
+            <img src="Resources/Img/Kr/Sub/Info4.png" alt="차이팡 뺄셈 앱 사진">
+            <img src="Resources/Img/Kr/Sub/Info5.png" alt="차이팡 뺄셈 앱 사진">
+        </div>
+
+        <div class="link">
+            <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.subtraction">
+                <img src="Resources/Img/website_Chaipangkids_b_google.png" alt="수학 구글 스토어"></a>
+            <a href="https://apps.apple.com/kr/app/chaipang-subtraction/id1614401871">
+                <img src="Resources/Img/website_Chaipangkids_b_appstore.png" alt="수학 애플 스토어"></a>
+        </div>
+
+        <div class="newLine"></div>
+    </div>
+
+    <span id="menu-multiplication"></span>
+    <div class="contents-card">
+        <div class="title">
+            <p>차이팡 구구단</p>
+            <img src="./Resources/Img/Kr/Mul/Title.png" alt="차이팡 구구단 로고" />
+        </div>
+        <div class="pink-rectangle">
+            <p>차이팡 프렌즈와 함께 익히는 구구단, 곱셈을 해봐요.</p>
+        </div>
+
+        <div class="info">
+            <img class="icon" src="./Resources/Img/MultiplicationIcon.png" alt="차이팡 구구단 아이콘" />
+            <div class="texts">
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-1.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>학습지가 필요 없는 구구단 연습</h1>
+                        <p>구구단 학습지, 우리 아이가 지루해하나요?</p>
+                        <p>차이팡 프렌즈 캐릭터와 놀이로 연습합니다.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-2.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>빠르고 정확한 구구단 계산</h1>
+                        <p>1단부터 9단까지, 한 번에 답이 나오지 않나요?</p>
+                        <p>차이팡 프렌즈와 함께 빠르고 정확하게 답을 찾을 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Resources/Img/Kr/Math_10-3.png" alt="넘버링 이미지" />
+                    <div>
+                        <h1>저절로 향상되는 구구단 실력</h1>
+                        <p>차이팡 프렌즈와 게임 대결을 하다 보면, <br class="responsive-break">우리 아이도 구구단 실력자가 될 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase-type02">
+            <img src="Resources/Img/Kr/Mul/Info1.png" alt="차이팡 구구단 앱 사진">
+            <img src="Resources/Img/Kr/Mul/Info2.png" alt="차이팡 구구단 앱 사진">
+            <img src="Resources/Img/Kr/Mul/Info3.png" alt="차이팡 구구단 앱 사진">
+            <img src="Resources/Img/Kr/Mul/Info4.png" alt="차이팡 구구단 앱 사진">
+            <img src="Resources/Img/Kr/Mul/Info5.png" alt="차이팡 구구단 앱 사진">
+        </div>
+
+        <div class="link">
+            <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.multiplication">
+                <img src="Resources/Img/website_Chaipangkids_b_google.png" alt="수학 구글 스토어"></a>
+            <a href="https://apps.apple.com/kr/app/chaipang-multiplication/id1615331704">
+                <img src="Resources/Img/website_Chaipangkids_b_appstore.png" alt="수학 애플 스토어"></a>
         </div>
     </div>
+
     <div id="waveDecoDown"></div>
     <footer>
-        <ul class="link">
+        <ul class="footer-links">
             <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
-                        src="./Resources/Img/Math_20.png" /></a></li>
-            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_21.png" /></a></li>
-            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_22.png" /></a></li>
+                        src="./Resources/Img/Math_20.png" alt="유튜브 채널" /></a></li>
+            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_21.png"
+                        alt="인스타그램 페이지" /></a></li>
+            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_22.png"
+                        alt="네이버 블로그" /></a>
+            </li>
         </ul>
-        <div class="info">
-            <ul>
+        <div class="footer-info">
+            <ul class="info-list">
                 <li>주식회사 위크리프 | 대표 박정연</li>
                 <li>사업자등록번호 | 281-81-01776</li>
                 <li>통신판매업신고번호 | 2021-서울강남-01386</li>
                 <li>이용약관 | 개인정보처리방침</li>
             </ul>
-            <ul>
-                <li><img src="./Resources/Img/source_2.png" /></li>
+            <ul class="info-list">
+                <li><img src="./Resources/Img/source_2.png" alt="위크리프 로고" /></li>
                 <li>©2021 Wecref All Right Reserved.</li>
             </ul>
-            <ul>
+            <ul class="info-list">
                 <li>주소 | 서울특별시 강남구 삼성로 555, 302호</li>
                 <li>대표 전화 | 508-0710</li>
                 <li>이메일 | support@wecref.com, jyp@wecref.com</li>

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+div.contents-card {
+    font-family: "NanumSquareEB";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contents-card .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.contents-card .title p {
+    font-size: 1.5em;
+    color: #6b6b6b;
+    margin: 0em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+div.contents-card .title img {
+    max-width: 370px;
+    width: 13em;
+    height: auto;
+}
+
+div.contents-card .pink-rectangle {
+    background-color: #ff75c7;
+    border-radius: 120px;
+    padding: .5em 0em;
+    width: 30em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.35em;
+}
+
+div.contents-card .pink-rectangle p {
+    margin: 0em;
+    color: #ffffff;
+    text-align: center;
+}
+
+div.contents-card .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.contents-card .info .icon {
+    max-width: 275px;
+    width: 10em;
+    height: auto;
+    margin: 1em;
+}
+
+div.contents-card .info .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.contents-card .info .texts>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.contents-card .info .texts img {
+    max-width: 82px;
+    max-height: 55px;
+    width: 3em;
+    height: auto;
+    margin-right: 1em;
+
+}
+
+div.contents-card .info .texts h1 {
+    font-size: .9em;
+    color: #ff75c7;
+    margin: 0em;
+}
+
+div.contents-card .info .texts p {
+    font-size: .7em;
+    color: #686868;
+    margin: 0em;
+    font-family: "NanumSquareR";
+}
+
+div.contents-card .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.contents-card .link img {
+    max-width: 176px;
+    width: 6em;
+    height: auto;
+    margin: 3em .25em;
+}
+
+@media screen and (max-width: 1024px) {
+
+    div.contents-card .pink-rectangle {
+        font-size: 1em;
+    }
+
+    div.contents-card .info {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.25em;
+    }
+
+    div.contents-card .info .icon {
+        margin-bottom: 1.5em;
+    }
+}
